@@ -70,7 +70,7 @@ if check_connection():
             book_div = book_page_article.find('div', class_='row')
             book_div_2 = book_div.find('div', class_='col-sm-6 product_main')
             
-            # Book description after first book broken -_- 
+            # Book description after first book broken -_- (probably can add search for "...more"(in every description(not sure)))
             description_tag_p = book_page_article.find_all('p')
             pprint(description_tag_p)
             print(description_tag_p[-1].text)
